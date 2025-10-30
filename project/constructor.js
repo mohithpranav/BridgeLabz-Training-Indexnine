@@ -10,7 +10,7 @@ const person2 = new Person("Sam", 21);
 console.log(person1.name);
 console.log(person2);
 
-// Adding Methods to a constructor -------------------------------------------------------
+// Adding Methods to a constructor ------------------------------------------------------- before es6
 function Student(name, college) {
   this.name = name;
   this.college = college;
@@ -39,9 +39,10 @@ class Employee {
     this.age = age;
   }
 
-  sayHi() {
+  sayHi = () => {
     console.log(`Hey ${this.name}`);
-  }
+    console.log(this);
+  };
 }
 
 const employee1 = new Employee("Sam", "Flipkart", 12);
