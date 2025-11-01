@@ -17,7 +17,7 @@ const saybye = function () {
 
 saybye();
 
-// arrow function
+// arrow function ---------------------------------------------------------------
 const multiply = (a, b) => a * b;
 {
   console.log(multiply(2, 4));
@@ -28,7 +28,7 @@ const greetUser = (username) => {
 };
 greetUser("Mohith");
 
-// Anonomous Function
+// Anonomous Function ---------------------------------------------------------------
 setTimeout(() => {
   console.log("This will run after 2 sec");
 }, 2000);

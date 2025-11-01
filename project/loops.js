@@ -165,3 +165,25 @@ for (;;) {
   console.log("Infinite Loop Count:", k);
   k++;
 }
+
+// Using map with for...of
+const map = new Map([
+  ["a", 1],
+  ["b", 2],
+  ["c", 3],
+]);
+for (let [key, value] of map) {
+  console.log(key, "=>", value);
+}
+
+// Using set with for...of
+const set = new Set([10, 20, 30]);
+for (let value of set) {
+  console.log("Set Value:", value);
+}
+
+// Using for in with string
+const str = "Hello";
+for (let index in str) {
+  console.log(`str[${index}] = ${str[index]}`);
+}

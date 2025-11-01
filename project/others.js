@@ -36,7 +36,7 @@ const rgb = [255, 200, 0];
 const [red, green, blue] = rgb;
 console.log(red, green, blue); // 255 200 0
 
-// Object destructuring
+// Object destructuring ---------------------------------------------------------
 const rectangle = { width: 20, height: 10, color: "blue" };
 const { width, height, color } = rectangle;
 console.log(width, height, color); // 20 10 blue
