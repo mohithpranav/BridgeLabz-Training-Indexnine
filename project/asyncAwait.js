@@ -2,17 +2,24 @@
 console.log("----- Async/Await Example -----");
 const fetchData = () => {
   return new Promise((resolve) => {
-    setTimeout(() => resolve("revealed data"), 8000);
+    setTimeout(() => resolve("revealed data"), 3000);
+  });
+};
+const fetchData2 = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve("revealed data1"), 5000);
   });
 };
 
 async function getData() {
   console.log("waiting for data...");
   const data = await fetchData();
-  console.log("fetching data...");
   console.log(data);
-}
+  const data2 = await fetchData2();
 
+  console.log(data2);
+  console.log("fetching data...");
+}
 getData();
 
 // Handling Multiple Async Functions Sequentially
